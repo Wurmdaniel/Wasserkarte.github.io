@@ -36,6 +36,11 @@ layout: default
 	const map = L.map('map').setView([52.1199, 12.4340], 11);
 	var marker = L.marker([52.1402, 12.4612]).addTo(map);
 	marker.bindPopup("<b>Messstation 1</b><br>Bodenfeuchte: 123").openPopup();
+	fetch('https://api.opensensemap.org/boxes/631100372977aa001c351492/sensors/638f1beb73c881001cbcc114')
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error('Error:', error));
+
 
 	const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 		maxZoom: 19,
