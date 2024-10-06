@@ -22,7 +22,12 @@ layout: default
 
 <div class="row" id="content">
     <section class="section col-xs-24">
+    <div class="content-wrap">
         <div id="map" style="width: 600px; height: 400px;"></div>
+    </div>
+    </section>
+</div>
+
 <script>
 
 	const map = L.map('map').setView([51.505, -0.09], 13);
@@ -33,5 +38,3 @@ layout: default
 	}).addTo(map);
 
 </script>
-    </section>
-</div>
