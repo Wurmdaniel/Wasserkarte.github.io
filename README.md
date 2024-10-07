@@ -5,8 +5,9 @@ Sensordaten werden auf der opensensemap gespeichert und per API Abfrage direkt i
 Wir nutzen dazu den Grouptag "Flaeming" um nach Daten aus dem Bodenfeuchtesensorennetzwerk zu filtern.
 
 Get DATA from the OSM
--> https://docs.opensensemap.org/#api-Boxes-getBoxes
 -> https://api.opensensemap.org/
+-> https://docs.opensensemap.org/#api-Measurements-getDataByGroupTag
+
 
 API Abfrage Sensebox nach Grouptag/Sensebox/Sensor
 https://api.opensensemap.org/boxes/data/bytag?grouptag=Flaeming
